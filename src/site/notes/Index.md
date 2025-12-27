@@ -86,3 +86,6 @@ Flow byla testována na celkem na těchto článcích zaměřených primárně n
 - [[Naing - 2019 - 56 Arduino Based Smart Home Automation System.pdf]],
 - [[Vardakis et al. - 2022 - Smart Home Deep Learning as a Method for Machine .pdf]], 
 - [[Zhao et al. - 2019 - BIM Sim3D Multi-Agent Human Activity Simulation .pdf]]).
+# Problémy a jejich řešení
+- duplicita poznámek - v případě, zpracování dalších článků, v níž se opakují pojmy, začnou vznikat duplicity, které pro systém se tváří jako dvě odlišné poznámky. Řešení průběžná kontrola nejen vektorové databáze, ale také fyzických poznámek a její sjednocení pomocí LLM.
+- Přístup k API službám (OpenAI) - lze řešit lokálně, ale z důvodu slabého HW je proto vhodné využívat API. Výsledky jsou mnohem rychlejší a přesnější.
