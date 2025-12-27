@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Chytrá domácnost/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Chytrá domácnost/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 
