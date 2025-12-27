@@ -2,38 +2,87 @@
 {"dg-publish":true,"dg-home":true,"permalink":"/Index/","tags":["gardenEntry"],"dgPassFrontmatter":true}
 ---
 
-# Generování atomických poznámek pomocí AI
-Při budování znalostních bází (Knowledge Management) je kritickým bodem škálovatelnost. Manuální propojování poznámek a udržování kontextu, jak to vyžaduje například metoda Zettelkasten, se s rostoucím objemem dat stává neudržitelným. Tento text popisuje technický experiment zaměřený na automatizaci tohoto procesu využitím agentových systémů.
-Řešení je postaveno na platformě [n8n](https://n8n.io) a celá flow se skládá ze dvou logických celků:
-- Prvním je LLM chain, který slouží k parsování nestrukturovaného textu (knihy, články) a extrakci klíčových slov, včetně jejich vysvětlení.
-- Druhým je AI agent napojený na vektorovou databázi, který má za úkol projít všechny vygenerované poznámky a pomocí  sémantického vyhledávání (embeddings) identifikovat souvislostí mezi nově vzniklým obsahem a existující bází.
-Flow je postavena na předpokladu, že uživatel pro poznámkování využívat [Obsidian](https://obsidian.md), jež se označuje jako tzv. Second brain. Vstupem pro flow jsou PDF soubory, které následně putují do LLM Chain, jež má za úkol extrahovat v rozmezí 5 - 50 atomických myšlenek s pravidly:
+# Postup generování atomických poznámek pomocí AI
+Při budování znalostní báze (Knowledge Management) je kritickým bodem škálovatelnost. Manuální propojování poznámek a udržování kontextu, jak to vyžaduje například metoda Zettelkasten, se s rostoucím objemem dat stává neudržitelným a mohou snadno vznikat duplicity a nebo protichůdné poznámky.
+Tento text popisuje technický experiment zaměřený na automatizaci při generování a propojení "chytrých" za pomocí agentového systému.
+Řešení je postaveno na platformě [n8n](https://n8n.io) a celou flow lze rozdělit na dvě základní fáze:
+1. Extrakce klíčových slov a jejich slovní popis.
+2. Hledání vztahů mezi poznámkami a jejich propojení.
+![Pasted image 20251227175833.png](/img/user/Pasted%20image%2020251227175833.png)
+# Kroky generování poznámek
+Pro extrakci pojmů je využit nód **Basic LLM Chain**. jehož vstupní prompt má za cíl na základě abstraktu představení a výsledků extrahovat klíčová slova a přiřadit jim vysvětlení. Prompt tak vypadá:
 ```
-- poznámka by měla být dlouhá maximálně 100 - 300 slov
-- Srozumitelná sama o sobě
-- Konkrétní tvrzení nebo koncept
-- Musí být vždy v češtině
-- V případě víceslovných tagů, spoj je pomocí "_", aby z toho bylo jedno slov
+Jsi expertem na generování atomických poznámek. Jako vstup máš vědecký článek {{ $json.source_file }}.
+
+Abstract:
+{{ $json.abstract }}
+
+Introduction:
+{{ $json.introduction }}
+
+Results:
+{{ $json.results }}
+
+Extrahuj 5-20 klíčových pojmů. Každý popiš 50-150 slov v češtině tak, aby byl atomický, neodkazoval se na původní text a jasně vysvětloval konkrétní pojem.
+
+KRITICKY DŮLEŽITÉ - FORMÁT VÝSTUPU:
+- Vrať POUZE validní JSON
+- ŽÁDNÝ plain text
+- ŽÁDNÉ číslování 1), 2), 3)
+- ŽÁDNÉ markdown bloky ```
+- Začni znakem { a skonči znakem }
+
+
+Nyní extrahuj pojmy a vrať validní JSON
 ```
-Tento krok z důvodu rychlosti a přesnosti je prováděn pomocí API, konkrétně [OpenAI](https://openai.com) modelem GPT-5 mini. Model byl zvolen kvůli svému poměru ceny a výkonu.
-V druhém kroku jsou jednotlivé poznámky postupně ukládání do vektorové databáze [Qdrant](https://qdrant.tech), pomocí lokálního embedding modelu Qwen3-embedding. Protože se jedná o atomické poznámky, tak nedochází k žádnému rozdělení poznámek. Každá poznámka v sobě nese metadata v podobě:
+Poznámky jsou extrahovány za pomocí [OpenAI API]([https://openai.com), konkrétně modelu *GPT-5-mini*. Model byl zvolen z důvodu své vysoké rychlosti a nízkým nákladům. V mezičase, ještě před uložením, se kontroluje (a případně vytváří) kolekce pro vektorovou databázi *[Qdrant](https://qdrant.tech)*, do níž jsou následně ukládány jednotlivé poznámky, jež byly vygenerovány pomocí Basic LLM chain.
+Embedding probíhá lokálně prostřednictvím *[Ollama](https://ollama.com/)* (voláno přes HTTP Request), s využitím modelu *bge-m3*. Jedná se o poměrně nový multijazyčný model, který je rychlý a generuje vektory o velikosti 1024 dimenzí.
+Do vektorové databáze je následně ukládán název poznámky (title), vysvětlení (content), zdrojový soubor (sourceFile) a tagy vystihující danou poznámku (tags). Každá poznámka má své ID. V tomto případě byl zvolen ruční proces generování pomocí hashovací funkce **MD5** s cílem eliminovat duplicitní položky (zajistit, že se stejná poznámka nenahraje dvakrát).
 ```
-title
-originalFile
-tags
+[
+    {
+        "id": "{{ $('Crypto').item.json.data }}",
+        "payload": {
+            "title": "{{ $('Crypto').item.json.title }}",
+            "content": "{{ $('Crypto').item.json.content }}",
+            "sourceFile": "{{ $('Crypto').item.json.sourceFile }}",
+            "tags": {{ JSON.stringify($('Crypto').item.json.tags) }}
+        },
+        "vector": {{ JSON.stringify($('Embedding').item.json.embedding) }}
+    }
+]
 ```
-Tyto metadata napomáhají v třetím kroku AI agentovi, jež rovněž využívá mozek lokální model (Qwen3 8b) a jako znalostní bází čerpá z vytvořené vektorové databáze, díky ní je schopen z metadat vytvořit vztahy mezi pznámkami. AI agent má ve svém promptu nastaven úkoly:
+V druhé fázi AI agent za pomocí modelu GPT-4.1 postupně prochází jednotlivě vygenerované poznámky a nechává si je rovněž vytahovat z vektorové databáze včetně nejbližších sousedů. 
 ```
-1. Použij Qdrant Retrieve tool - vyhledej podobné poznámky k této poznámce
-2. Vyfiltruj pouze poznámky se similarity > 0.80 (vysoká podobnost)
-3. Ignoruj vstupní poznámku (pokud by se našla sama)
-```
-A striktně nastavená pravidla:
-```
-- Používej POUZE názvy z Qdrant metadata.title
-- Pokud není žádná podobná poznámka (similarity > 0.80), vrať prázdné pole relatedNotes: []
-- NIKDY nevymýšlej názvy poznámek
-```
-Flow byla testována na celkem třech typech materiál - kniha [[Atomic Habbits\|Atomic Habbits]],  [[Gang of Four Design Patterns in Machine Learning and Recommender Systems\|semestrálním projektu do předmětu Návrhové vzory]], odborných článků na téma [[Smart home\|Chytrá domácnost]].
-Následující obrázek představuje průchod celé flow, jež pracuje s Google diskem pro automatizované načítání a ukládání souborů do složky s Obsidian trezorem.
-![[n8n-flow.jpg\|n8n-flow.jpg]]
+Jsi expert na propojování atomických poznámek v Zettelkasten systému.
+
+VSTUPNÍ POZNÁMKA:
+Název: {{ $('Crypto').item.json.title }}
+Obsah: {{ $('Crypto').item.json.content }}
+Tagy: {{ $('Crypto').item.json.tags }}
+
+DOSTUPNÉ POZNÁMKY Z DATABÁZE:
+{{ $json.result.points.map((p, i) => `${i+1}. "${p.payload.title}"`).join('\n') }}
+
+ÚKOL:
+Analyzuj poznámky ze seznamu výše a najdi ty, které jsou **tematicky propojené** se vstupní poznámkou.
+
+KRITÉRIA:
+- Sdílejí společné technologie, koncepty nebo domény
+- Doplňují nebo rozšiřují vstupní poznámku
+- Vyber maximálně 5 nejlepších propojení
+- Seřaď podle relevance (nejvíce související první)
+
+KRITICKÉ PRAVIDLO:
+V poli relatedNotes[].title MUSÍŠ použít PŘESNĚ názvy ze seznamu "DOSTUPNÉ POZNÁMKY".
+ZKOPÍRUJ celý řetězec včetně diakritiky.
+NIKDY nevymýšlej vlastní názvy.
+Pokud není souvislost, vrať prázdné pole relatedNotes: []
+``` 
+Na základě toho AI agent vyhodnotí jejich relevanci a vytvoří propojení, jež dále odůvodní.
+# Příklad
+Flow byla testována na celkem na těchto článcích zaměřených primárně na chytrou domácnost, agentový přístup a Arduino:
+- [[Amine et al. - 2018 - Smart Home Automation System based on Arduino.pdf]],
+- [[Naing - 2019 - 56 Arduino Based Smart Home Automation System.pdf]],
+- [[Vardakis et al. - 2022 - Smart Home Deep Learning as a Method for Machine .pdf]] a 
+- [[Zhao et al. - 2019 - BIM Sim3D Multi-Agent Human Activity Simulation .pdf]])
