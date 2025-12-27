@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/PIR senzor (detekce pohybu)/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/PIR senzor (detekce pohybu)/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

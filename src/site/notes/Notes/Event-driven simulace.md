@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Event-driven simulace/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Event-driven simulace/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

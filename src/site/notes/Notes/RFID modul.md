@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/RFID modul/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/RFID modul/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

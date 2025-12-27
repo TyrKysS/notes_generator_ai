@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Analýza nasazení senzorů/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Analýza nasazení senzorů/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

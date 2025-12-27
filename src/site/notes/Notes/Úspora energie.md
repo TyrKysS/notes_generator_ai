@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Úspora energie/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Úspora energie/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

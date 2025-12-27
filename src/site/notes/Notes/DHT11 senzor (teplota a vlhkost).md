@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/DHT11 senzor (teplota a vlhkost)/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/DHT11 senzor (teplota a vlhkost)/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

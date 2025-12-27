@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Arduino (mikrokontrolér)/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Arduino (mikrokontrolér)/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

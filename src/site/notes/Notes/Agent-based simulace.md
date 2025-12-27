@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Agent-based simulace/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Agent-based simulace/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

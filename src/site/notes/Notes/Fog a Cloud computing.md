@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Fog a Cloud computing/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Fog a Cloud computing/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

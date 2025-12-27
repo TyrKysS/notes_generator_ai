@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Algoritmus zpětného šíření (Backpropagation)/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Algoritmus zpětného šíření (Backpropagation)/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Interoperabilita formátů/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Interoperabilita formátů/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Arduino Nano/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Arduino Nano/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

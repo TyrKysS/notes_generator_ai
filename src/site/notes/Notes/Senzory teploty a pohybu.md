@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Senzory teploty a pohybu/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Senzory teploty a pohybu/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Bezpečnostní funkce  alarmy a zámky/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Bezpečnostní funkce  alarmy a zámky/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

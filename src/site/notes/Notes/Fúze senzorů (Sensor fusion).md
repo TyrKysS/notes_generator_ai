@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Fúze senzorů (Sensor fusion)/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Fúze senzorů (Sensor fusion)/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

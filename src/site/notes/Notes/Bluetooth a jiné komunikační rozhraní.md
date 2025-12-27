@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Bluetooth a jiné komunikační rozhraní/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Bluetooth a jiné komunikační rozhraní/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

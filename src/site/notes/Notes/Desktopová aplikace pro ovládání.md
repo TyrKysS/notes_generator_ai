@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Desktopová aplikace pro ovládání/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Desktopová aplikace pro ovládání/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

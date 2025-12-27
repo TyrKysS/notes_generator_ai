@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Neinvazivní elektromagnetické snímání/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Neinvazivní elektromagnetické snímání/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

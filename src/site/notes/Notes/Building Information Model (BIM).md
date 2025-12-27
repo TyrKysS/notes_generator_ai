@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Building Information Model (BIM)/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Building Information Model (BIM)/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

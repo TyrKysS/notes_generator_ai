@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Odhad obsazenosti (Occupancy estimation)/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Odhad obsazenosti (Occupancy estimation)/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

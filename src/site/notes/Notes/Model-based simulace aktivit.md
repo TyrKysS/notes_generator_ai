@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Model-based simulace aktivit/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Model-based simulace aktivit/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

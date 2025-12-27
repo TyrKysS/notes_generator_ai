@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/Centrální řídicí jednotka/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Centrální řídicí jednotka/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

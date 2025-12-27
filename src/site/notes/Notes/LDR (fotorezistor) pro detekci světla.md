@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"permalink":"/Notes/LDR (fotorezistor) pro detekci světla/","dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/LDR (fotorezistor) pro detekci světla/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy
