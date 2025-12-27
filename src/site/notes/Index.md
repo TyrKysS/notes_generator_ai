@@ -79,7 +79,7 @@ ZKOPÍRUJ celý řetězec včetně diakritiky.
 NIKDY nevymýšlej vlastní názvy.
 Pokud není souvislost, vrať prázdné pole relatedNotes: []
 ``` 
-Na základě toho AI agent vyhodnotí jejich relevanci a vytvoří propojení, jež dále odůvodní.
+Na základě toho AI agent vyhodnotíP jejich relevanci a vytvoří propojení, jež dále odůvodní.
 # Příklad
 Flow byla testována na celkem na těchto článcích zaměřených primárně na chytrou domácnost, agentový přístup a Arduino:
 - [[Amine et al. - 2018 - Smart Home Automation System based on Arduino.pdf]],
