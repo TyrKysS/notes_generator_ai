@@ -89,10 +89,10 @@ Flow byla testována na celkem na těchto článcích zaměřených primárně n
 # Dotazování LLM a vyhledávání ve vektorové DB
 Kromě generování obsahu lze LLM využít k dotazování nad konkrétními poznámkami, jejich vysvětlování či vyhledávání. K tomuto účelu efektivně slouží vytvořená vektorová databáze. S cílem maximalizovat úsporu tokenů a umožnit běh na běžném PC byly pro srovnání vybrány čtyři lokální modely.
 Každému modelu byly položeny tyto otázky:
-- Co je to agent?
-- Co je to fog-cloud computing?
-- Jaké senzory jsme schopni integrovat do Arduina?
-- Jaká je aktuální cena modulu ESP32 na českém trhu?
+- Co je to agent? - Cílem bylo nalézt a čerpat z [[Agent-based simulace]]
+- Co je to fog-cloud computing? - Cílem bylo nalézt a čerpat z [[Fog a Cloud computing]]
+- Jaké senzory jsme schopni integrovat do Arduina? - Cílem bylo nalézt a čerpat z [[Integrace senzorů a aktorů]]
+- Jaká je aktuální cena modulu ESP32 na českém trhu? Cílem bylo odpovědět, že taková poznámka neexistuje, nebo že nemá přístup k těmto informacím.
 Jednotlivé odpovědi jsou zaznamenány v tabulkách. Testování probíhalo s vektorovou databází i bez ní pro porovnání přesnosti. Zvoleny byly modely [[Llama 3.1 8b]], [[MIstral-memo]], náročnější reasoning model [[DeepSeek-r1]] a na závěr model od OpenAI [[gpt-oss]]. Po rozkliknutí každého modelu je k dispozici srovnávací tabulka.
 Pro modely bez RAG byl nastaven systémový prompt:
 ```
