@@ -10,7 +10,7 @@ Tento text popisuje technický experiment zaměřený na automatizaci při gener
 2. Hledání vztahů mezi poznámkami a jejich propojení.
 ![Pasted image 20251227175833.png](/img/user/Pasted%20image%2020251227175833.png)
 # Kroky pro generování poznámek
-Pro extrakci pojmů je využit nód **Basic LLM Chain**. jehož vstupní prompt má za cíl na základě abstraktu představení a výsledků extrahovat klíčová slova a přiřadit jim vysvětlení. Prompt tak vypadá:
+Pro extrakci pojmů je využit nód *Basic LLM Chain*. jehož vstupní prompt má za cíl na základě abstraktu představení a výsledků extrahovat klíčová slova a přiřadit jim vysvětlení. Prompt tak vypadá:
 ```
 Jsi expertem na generování atomických poznámek. Jako vstup máš vědecký článek {{ $json.source_file }}.
 
