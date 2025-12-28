@@ -87,7 +87,23 @@ Flow byla testována na celkem na těchto článcích zaměřených primárně n
 - [[Vardakis et al. - 2022 - Smart Home Deep Learning as a Method for Machine .pdf]], 
 - [[Zhao et al. - 2019 - BIM Sim3D Multi-Agent Human Activity Simulation .pdf]]).
 # Dotazování LLM a vyhledávání ve vektorové DB
-Kromě generování poznámek je možné také se dotazovat pomocí LLM na konkrétní poznámky za účelem jejich vysvětlení, či vyhledávání. K tomuto účelu skvělé slouží vytvořená vektorová databáze a nejdůležitějším bodem je zvolit vhodný jazykový model. Pro tento účel byly zvoleny celkem čtyři lokálně běžící modely, které je možné rozjet na běžném PC. V tomto případě byly zvoleny modely [[Llama 3.1 8b]], [[MIstral-memo]], lehce náročnější ale s podporou reasoning model [[DeepSeek-r1]] a na konci také model od OpenAI [[gpt-oss]]. Všechny modely byly měly nastaven totožný systémový prompt:
+Kromě generování obsahu lze LLM využít k dotazování nad konkrétními poznámkami, jejich vysvětlování či vyhledávání. K tomuto účelu efektivně slouží vytvořená vektorová databáze. S cílem maximalizovat úsporu tokenů a umožnit běh na běžném PC byly pro srovnání vybrány čtyři lokální modely.
+Každému modelu byly položeny tyto otázky:
+- Co je to agent?
+- Co je to fog-cloud computing?
+- Jaké senzory jsme schopni integrovat do Arduina?
+- Jaká je aktuální cena modulu ESP32 na českém trhu?
+Jednotlivé odpovědi jsou zaznamenány v tabulkách. Testování probíhalo s vektorovou databází i bez ní pro porovnání přesnosti. Zvoleny byly modely [[Llama 3.1 8b]], [[MIstral-memo]], náročnější reasoning model [[DeepSeek-r1]] a na závěr model od OpenAI [[gpt-oss]]. Po rozkliknutí každého modelu je k dispozici srovnávací tabulka.
+Pro modely bez RAG byl nastaven systémový prompt:
+```
+Jsi odborný asistent, který odpovídá na otázky uživatelů na základě svých znalostí.
+
+Když obdržíš dotaz od uživatele, odpověz co nejpřesněji a nejsrozumitelněji.
+
+DŮLEŽITÉ PRAVIDLO:
+Pokud si nejsi jistý odpovědí nebo nemáš dostatečné znalosti k zodpovězení dotazu, jasně to přiznej. Napiš "Nevím" nebo "Nemám dostatečné informace k zodpovězení této otázky" a NIKDY si nevymýšlej.
+```
+Naopak pro modely, které měly k dispozici vektorovou DB:
 ```
 Jsi odborným asistentem, který primárně čerpá ze své znalostní báze z Qdrant databázené, kterou máš k dispozici.
 Jakmile obdržíš dotaz ud uživatele, tak napřed projdi svou znáslostí bázi z vektorového Databáze a pokud najdeš relevantní poznámku, tak na jejím základě odpověz. Na konci rovněž uveď zdroj, odkud jsi čerpal (název poznámky). V případě, že konkrétní znalost nenajdeš v databázi, tak napiš, že nevíš, nebo že daná poznámka není evidovaná v databázi a nevymýšlej si.
