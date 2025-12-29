@@ -35,7 +35,7 @@ KRITICKY DŮLEŽITÉ - FORMÁT VÝSTUPU:
 
 Nyní extrahuj pojmy a vrať validní JSON
 ```
-Poznámky jsou extrahovány za pomocí [OpenAI API]([https://openai.com/cs-CZ/), konkrétně modelu *GPT-5-mini*. Model byl zvolen z důvodu své vysoké rychlosti a nízkým nákladům. V mezičase, ještě před uložením, se kontroluje (a případně vytváří) kolekce pro vektorovou databázi *[Qdrant](https://qdrant.tech)*, do níž jsou následně ukládány jednotlivé poznámky, jež byly vygenerovány pomocí Basic LLM chain.
+Poznámky jsou extrahovány za pomocí [OpenAI API](https://openai.com/cs-CZ/), konkrétně modelu *GPT-5-mini*. Model byl zvolen z důvodu své vysoké rychlosti a nízkým nákladům. V mezičase, ještě před uložením, se kontroluje (a případně vytváří) kolekce pro vektorovou databázi *[Qdrant](https://qdrant.tech)*, do níž jsou následně ukládány jednotlivé poznámky, jež byly vygenerovány pomocí Basic LLM chain.
 Embedding probíhá lokálně prostřednictvím *[Ollama](https://ollama.com/)* (voláno přes HTTP Request), s využitím modelu *bge-m3*. Jedná se o poměrně nový multijazyčný model, který je rychlý a generuje vektory o velikosti 1024 dimenzí.
 Do vektorové databáze je následně ukládán název poznámky (title), vysvětlení (content), zdrojový soubor (sourceFile) a tagy vystihující danou poznámku (tags). Každá poznámka má své ID. V tomto případě byl zvolen ruční proces generování pomocí hashovací funkce *MD5* s cílem eliminovat duplicitní položky (zajistit, že se stejná poznámka nenahraje dvakrát).
 ```
