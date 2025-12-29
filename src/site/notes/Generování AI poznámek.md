@@ -24,6 +24,7 @@ KRITICKY DŮLEŽITÉ - FORMÁT VÝSTUPU:
 >- ŽÁDNÉ číslování 1), 2), 3)
 >- ŽÁDNÉ markdown bloky ```
 >- Začni znakem { a skonči znakem }
+>
 Nyní extrahuj pojmy a vrať validní JSON
 
 Poznámky jsou extrahovány za pomocí [OpenAI API](https://openai.com/cs-CZ/), konkrétně modelu *GPT-5-mini*. Model byl zvolen z důvodu své vysoké rychlosti a nízkým nákladům. V mezičase, ještě před uložením, se kontroluje (a případně vytváří) kolekce pro vektorovou databázi *[Qdrant](https://qdrant.tech)*, do níž jsou následně ukládány jednotlivé poznámky, jež byly vygenerovány pomocí Basic LLM chain.
