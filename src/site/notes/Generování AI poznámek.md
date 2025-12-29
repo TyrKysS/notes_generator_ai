@@ -81,6 +81,12 @@ NIKDY nevymýšlej vlastní názvy.
 Pokud není souvislost, vrať prázdné pole relatedNotes: []
 ``` 
 Na základě toho AI agent vyhodnotíP jejich relevanci a vytvoří propojení, jež dále odůvodní.
+# Příklad
+Flow byla testována na celkem na těchto článcích zaměřených primárně na chytrou domácnost, agentový přístup a Arduino:
+- [[Amine et al. - 2018 - Smart Home Automation System based on Arduino.pdf]],
+- [[Naing - 2019 - 56 Arduino Based Smart Home Automation System.pdf]],
+- [[Vardakis et al. - 2022 - Smart Home Deep Learning as a Method for Machine .pdf]], 
+- [[Zhao et al. - 2019 - BIM Sim3D Multi-Agent Human Activity Simulation .pdf]].
 # Dotazování LLM a vyhledávání ve vektorové DB
 Kromě generování obsahu lze LLM využít k dotazování nad konkrétními poznámkami, jejich vysvětlování či vyhledávání. K tomuto účelu efektivně slouží vytvořená vektorová databáze. S cílem maximalizovat úsporu tokenů a umožnit běh na běžném PC byly pro srovnání vybrány čtyři lokální modely.
 Každému modelu byly položeny tyto otázky:
