@@ -44,32 +44,26 @@ Do vektorové databáze je následně ukládán název poznámky (title), vysvě
 ]
 ```
 V druhé fázi AI agent za pomocí modelu GPT-4.1 postupně prochází jednotlivě vygenerované poznámky a nechává si je rovněž vytahovat z vektorové databáze včetně nejbližších sousedů. 
-```
-Jsi expert na propojování atomických poznámek v Zettelkasten systému.
 
+>Jsi expert na propojování atomických poznámek v Zettelkasten systému.
 VSTUPNÍ POZNÁMKA:
 Název: {{ $('Crypto').item.json.title }}
 Obsah: {{ $('Crypto').item.json.content }}
 Tagy: {{ $('Crypto').item.json.tags }}
-
 DOSTUPNÉ POZNÁMKY Z DATABÁZE:
 {{ $json.result.points.map((p, i) => `${i+1}. "${p.payload.title}"`).join('\n') }}
-
 ÚKOL:
 Analyzuj poznámky ze seznamu výše a najdi ty, které jsou **tematicky propojené** se vstupní poznámkou.
-
 KRITÉRIA:
-- Sdílejí společné technologie, koncepty nebo domény
-- Doplňují nebo rozšiřují vstupní poznámku
-- Vyber maximálně 5 nejlepších propojení
-- Seřaď podle relevance (nejvíce související první)
-
+>- Sdílejí společné technologie, koncepty nebo domény
+>- Doplňují nebo rozšiřují vstupní poznámku
+>- Vyber maximálně 5 nejlepších propojení
+>- Seřaď podle relevance (nejvíce související první)
 KRITICKÉ PRAVIDLO:
 V poli relatedNotes[].title MUSÍŠ použít PŘESNĚ názvy ze seznamu "DOSTUPNÉ POZNÁMKY".
 ZKOPÍRUJ celý řetězec včetně diakritiky.
 NIKDY nevymýšlej vlastní názvy.
 Pokud není souvislost, vrať prázdné pole relatedNotes: []
-``` 
 Na základě toho AI agent vyhodnotíP jejich relevanci a vytvoří propojení, jež dále odůvodní.
 # Příklad
 Flow byla testována na celkem na těchto článcích zaměřených primárně na chytrou domácnost, agentový přístup a Arduino:
