@@ -25,7 +25,7 @@ KRITICKY DŮLEŽITÉ - FORMÁT VÝSTUPU:
 >- ŽÁDNÉ markdown bloky ```
 >- Začni znakem { a skonči znakem }
 >
-Nyní extrahuj pojmy a vrať validní JSON
+>Nyní extrahuj pojmy a vrať validní JSON
 
 Poznámky jsou extrahovány za pomocí [OpenAI API](https://openai.com/cs-CZ/), konkrétně modelu *GPT-5-mini*. Model byl zvolen z důvodu své vysoké rychlosti a nízkým nákladům. V mezičase, ještě před uložením, se kontroluje (a případně vytváří) kolekce pro vektorovou databázi *[Qdrant](https://qdrant.tech)*, do níž jsou následně ukládány jednotlivé poznámky, jež byly vygenerovány pomocí Basic LLM chain.
 Embedding probíhá lokálně prostřednictvím *[Ollama](https://ollama.com/)* (voláno přes HTTP Request), s využitím modelu *bge-m3*. Jedná se o poměrně nový multijazyčný model, který je rychlý a generuje vektory o velikosti 1024 dimenzí.
@@ -61,12 +61,12 @@ KRITÉRIA:
 >- Vyber maximálně 5 nejlepších propojení
 >- Seřaď podle relevance (nejvíce související první)
 >
-KRITICKÉ PRAVIDLO:
-V poli relatedNotes[].title MUSÍŠ použít PŘESNĚ názvy ze seznamu "DOSTUPNÉ POZNÁMKY".
-ZKOPÍRUJ celý řetězec včetně diakritiky.
-NIKDY nevymýšlej vlastní názvy.
-Pokud není souvislost, vrať prázdné pole relatedNotes: []
-Na základě toho AI agent vyhodnotíP jejich relevanci a vytvoří propojení, jež dále odůvodní.
+>KRITICKÉ PRAVIDLO:
+>V poli relatedNotes[].title MUSÍŠ použít PŘESNĚ názvy ze seznamu "DOSTUPNÉ POZNÁMKY".
+>ZKOPÍRUJ celý řetězec včetně diakritiky.
+>NIKDY nevymýšlej vlastní názvy.
+>Pokud není souvislost, vrať prázdné pole relatedNotes: []
+>Na základě toho AI agent vyhodnotíP jejich relevanci a vytvoří propojení, jež dále odůvodní.
 # Příklad
 Flow byla testována na celkem na těchto článcích zaměřených primárně na chytrou domácnost, agentový přístup a Arduino:
 - [[Amine et al. - 2018 - Smart Home Automation System based on Arduino.pdf]],
