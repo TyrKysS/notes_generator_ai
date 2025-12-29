@@ -2,8 +2,7 @@
 {"dg-publish":true,"permalink":"/Dotazování/","dgPassFrontmatter":true}
 ---
 
-Jednotlivé odpovědi jsou zaznamenány v tabulkách. Testování probíhalo s vektorovou databází i bez ní pro porovnání přesnosti. Zvoleny byly modely [[Notes/Llama 3.1 8b\|Llama 3.1 8b]], [[Mistral-memo\|Mistral-memo]] a  model od OpenAI [[gpt-oss\|gpt-oss]]. Po rozkliknutí každého modelu je k dispozici srovnávací tabulka.
-Pro modely bez RAG byl nastaven systémový prompt:
+
 ```
 Jsi odborný asistent, který odpovídá na otázky uživatelů na základě svých znalostí.
 
