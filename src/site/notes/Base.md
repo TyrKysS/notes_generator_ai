@@ -4,3 +4,7 @@
 
 # Rozcestník
 [[Generování AI poznámek\|Generování AI poznámek]]
+[[Generování\|Generování]]
+[[Kroky\|Kroky]]
+[[Příklady\|Příklady]]
+[[Dotazování\|Dotazování]]
