@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/gsm-modul/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/GSM modul/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

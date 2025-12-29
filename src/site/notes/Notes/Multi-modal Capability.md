@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/multi-modal-capability/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Multi-modal Capability/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

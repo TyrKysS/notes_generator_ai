@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/pir-senzor-detekce-pohybu/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/PIR senzor (detekce pohybu)/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

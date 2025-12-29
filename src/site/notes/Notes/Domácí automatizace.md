@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/domaci-automatizace/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Domácí automatizace/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

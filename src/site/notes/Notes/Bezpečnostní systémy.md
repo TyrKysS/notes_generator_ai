@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/bezpecnostni-systemy/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Bezpečnostní systémy/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/prototypovani-a-zapojeni/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Prototypování a zapojení/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

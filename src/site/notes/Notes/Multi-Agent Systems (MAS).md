@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/multi-agent-systems-mas/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Multi-Agent Systems (MAS)/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/bezdratove-senzory-a-wsn/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Bezdrátové senzory a WSN/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/llama-3-1-8b/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Llama 3.1 8b/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 

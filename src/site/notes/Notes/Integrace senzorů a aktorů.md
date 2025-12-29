@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/integrace-senzoru-a-aktoru/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Integrace senzorů a aktorů/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

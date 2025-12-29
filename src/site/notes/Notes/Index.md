@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-home":true,"permalink":"/notes/index/","tags":["gardenEntry"],"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-home":true,"permalink":"/Notes/Index/","tags":["gardenEntry"],"dgPassFrontmatter":true}
 ---
 
 # Generování atomických poznámek pomocí AI

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/mistral-memo/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Mistral-memo/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 
