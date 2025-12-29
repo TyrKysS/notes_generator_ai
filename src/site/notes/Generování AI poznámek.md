@@ -14,11 +14,11 @@ Tento text popisuje technický experiment zaměřený na automatizaci při gener
 Pro extrakci pojmů je využit nód *Basic LLM Chain*. jehož vstupní prompt má za cíl na základě abstraktu představení a výsledků extrahovat klíčová slova a přiřadit jim vysvětlení. Prompt tak vypadá:
 
 >Jsi expertem na generování atomických poznámek. Jako vstup máš vědecký článek {{ $json.source_file }}.
->Abstract:{{ $json.abstract }}
->Introduction:{{ $json.introduction }}
->Results: {{ $json.results }}
->Extrahuj 5-20 klíčových pojmů. Každý popiš 50-150 slov v češtině tak, aby byl atomický, neodkazoval se na původní text a jasně vysvětloval konkrétní pojem.
->KRITICKY DŮLEŽITÉ - FORMÁT VÝSTUPU:
+Abstract:{{ $json.abstract }}
+Introduction:{{ $json.introduction }}
+Results: {{ $json.results }}
+Extrahuj 5-20 klíčových pojmů. Každý popiš 50-150 slov v češtině tak, aby byl atomický, neodkazoval se na původní text a jasně vysvětloval konkrétní pojem.
+KRITICKY DŮLEŽITÉ - FORMÁT VÝSTUPU:
 >- Vrať POUZE validní JSON
 >- ŽÁDNÝ plain text
 >- ŽÁDNÉ číslování 1), 2), 3)
