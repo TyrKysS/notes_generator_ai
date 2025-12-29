@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Reléové moduly pro spínání zátěže/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/releove-moduly-pro-spinani-zateze/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

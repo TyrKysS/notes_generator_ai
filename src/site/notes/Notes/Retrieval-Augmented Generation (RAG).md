@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Retrieval-Augmented Generation (RAG)/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/retrieval-augmented-generation-rag/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

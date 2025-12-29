@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Plánování úkolů multi-agentů/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/planovani-ukolu-multi-agentu/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

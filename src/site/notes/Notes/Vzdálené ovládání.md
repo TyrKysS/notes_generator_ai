@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Vzdálené ovládání/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/vzdalene-ovladani/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

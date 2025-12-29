@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Rozpoznávání lidské aktivity/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/rozpoznavani-lidske-aktivity/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

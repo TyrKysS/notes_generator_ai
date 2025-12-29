@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Large Language Model (LLM)/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/large-language-model-llm/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

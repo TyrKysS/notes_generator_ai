@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Syntetická datová sada/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/synteticka-datova-sada/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

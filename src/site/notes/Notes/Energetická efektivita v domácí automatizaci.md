@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Energetická efektivita v domácí automatizaci/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/energeticka-efektivita-v-domaci-automatizaci/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

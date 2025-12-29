@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Neuronová síť/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/neuronova-sit/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

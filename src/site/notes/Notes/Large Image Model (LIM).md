@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Large Image Model (LIM)/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/large-image-model-lim/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

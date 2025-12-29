@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/AI Agent/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/ai-agent/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

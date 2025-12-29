@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Rozpoznávání obličeje (Face Recognition)/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/rozpoznavani-obliceje-face-recognition/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

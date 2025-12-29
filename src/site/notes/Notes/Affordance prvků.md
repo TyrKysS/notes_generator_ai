@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Affordance prvků/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/affordance-prvku/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

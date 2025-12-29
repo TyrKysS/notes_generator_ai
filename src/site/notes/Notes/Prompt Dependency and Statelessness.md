@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Prompt Dependency and Statelessness/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/prompt-dependency-and-statelessness/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

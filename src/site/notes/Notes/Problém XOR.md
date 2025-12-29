@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Problém XOR/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/problem-xor/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

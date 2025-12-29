@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Agentic AI/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/agentic-ai/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy

@@ -1,5 +1,5 @@
 ---
-{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/Notes/Bezpečnostní systémy chytrého domu/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
+{"dg-publish":true,"dg-show-local-graph":true,"permalink":"/notes/bezpecnostni-systemy-chytreho-domu/","dgShowLocalGraph":true,"dgPassFrontmatter":true}
 ---
 
 Tagy
