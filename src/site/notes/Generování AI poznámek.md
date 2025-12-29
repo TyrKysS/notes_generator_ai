@@ -60,6 +60,7 @@ KRITÉRIA:
 >- Doplňují nebo rozšiřují vstupní poznámku
 >- Vyber maximálně 5 nejlepších propojení
 >- Seřaď podle relevance (nejvíce související první)
+>
 KRITICKÉ PRAVIDLO:
 V poli relatedNotes[].title MUSÍŠ použít PŘESNĚ názvy ze seznamu "DOSTUPNÉ POZNÁMKY".
 ZKOPÍRUJ celý řetězec včetně diakritiky.
