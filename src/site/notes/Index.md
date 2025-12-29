@@ -99,7 +99,7 @@ Každému modelu byly položeny tyto otázky:
 7. Lze implementovat agenta do Arduino? Velká otevřenost, lze čerpat z [[AI Agent]], [[Agent-based simulace]], [[Notes/Arduino Nano\|Arduino Nano]] a [[Arduino (mikrokontrolér)]]
 8. Kdo víc potřebuje RAG? Agentická AI nebo AI agent? Lze čerpat z [[Retrieval-Augmented Generation (RAG)]], [[Agentic AI]] a [[AI Agent]]
 
-Jednotlivé odpovědi jsou zaznamenány v tabulkách. Testování probíhalo s vektorovou databází i bez ní pro porovnání přesnosti. Zvoleny byly modely [[Llama 3.1 8b]], [[MIstral-memo]] a  model od OpenAI [[gpt-oss]]. Po rozkliknutí každého modelu je k dispozici srovnávací tabulka.
+Jednotlivé odpovědi jsou zaznamenány v tabulkách. Testování probíhalo s vektorovou databází i bez ní pro porovnání přesnosti. Zvoleny byly modely [[Llama 3.1 8b]], [[Mistral-memo]] a  model od OpenAI [[gpt-oss]]. Po rozkliknutí každého modelu je k dispozici srovnávací tabulka.
 Pro modely bez RAG byl nastaven systémový prompt:
 ```
 Jsi odborný asistent, který odpovídá na otázky uživatelů na základě svých znalostí.
