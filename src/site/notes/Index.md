@@ -89,6 +89,7 @@ Flow byla testována na celkem na těchto článcích zaměřených primárně n
 # Dotazování LLM a vyhledávání ve vektorové DB
 Kromě generování obsahu lze LLM využít k dotazování nad konkrétními poznámkami, jejich vysvětlování či vyhledávání. K tomuto účelu efektivně slouží vytvořená vektorová databáze. S cílem maximalizovat úsporu tokenů a umožnit běh na běžném PC byly pro srovnání vybrány čtyři lokální modely.
 Každému modelu byly položeny tyto otázky:
+
 1. Co je to agent? - Cílem bylo čerpat z [[Agent-based simulace]]
 2. Co je to fog-cloud computing? - Cílem bylo čerpat z [[Fog a Cloud computing]]
 3. Jaké senzory jsme schopni integrovat do Arduina? - Cílem bylo čerpat z [[Integrace senzorů a aktorů]]
