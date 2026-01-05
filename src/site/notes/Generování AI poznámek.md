@@ -69,7 +69,7 @@ Flow byla testována na celkem pěti článcích, jež jsou zaměřeny na domén
 - [[Vardakis et al. - 2022 - Smart Home Deep Learning as a Method for Machine .pdf|Smart Home: Deep Learning as a Method for Machine Learning in Recognition of Face, Silhouette and Human Activity in the Service of a Safe Home]], 
 - [[Zhao et al. - 2019 - BIM Sim3D Multi-Agent Human Activity Simulation .pdf|BIM Sim 3D : Multi-Agent Human Activity Simulation in Indoor Spaces]].
 - [[2505.10468v5.pdf|AI Agents vs. Agentic AI: A Conceptual taxonomy, applications and challenges]]
-# Dotazování LLM a vyhledávání ve vektorové databázi
+## Dotazování LLM a vyhledávání ve vektorové databázi
 Kromě generování obsahu lze LLM využít k dotazování nad konkrétními poznámkami, jejich vysvětlení či vyhledávání. K tomuto účelu efektivně slouží vytvořená vektorová databáze. S cílem maximalizovat úsporu tokenů a umožnit běh na běžném PC byly pro srovnání vybrány čtyři lokální modely. Každému modelu byly položeny tyto otázky:
 
 1. Co je to agent?
