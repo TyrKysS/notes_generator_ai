@@ -62,7 +62,7 @@ KRITÉRIA:
 >Zkopíruj celý řetězec včetně diakritiky.
 >Nikdy nevymýšlej vlastní názvy.
 >Pokud není souvislost, vrať prázdné pole relatedNotes: []
-# Příklad
+# Praktický ukázka
 Flow byla testována na celkem pěti článcích, jež jsou zaměřeny na domény chytrá domácnost, agentový a agentický systém a Arduino:
 - [[Amine et al. - 2018 - Smart Home Automation System based on Arduino.pdf|Smart Home Automation System Based on Arduino]],
 - [[Naing - 2019 - 56 Arduino Based Smart Home Automation System.pdf|Arduino Based Smart Home Automation System]],
