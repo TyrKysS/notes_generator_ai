@@ -3,4 +3,4 @@
 ---
 
 # Rozcestník
-[[Generování AI poznámek\|Generování AI poznámek]]
+[[Generování poznámek pomocí AI\|Generování poznámek pomocí AI]]
